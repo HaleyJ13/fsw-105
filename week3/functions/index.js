@@ -1,4 +1,4 @@
-/*function sum(num1, num2) {
+function sum(num1, num2) {
     return num1 + num2
 }
 
@@ -18,7 +18,7 @@ function numbers(num1, num2, num3) {
     return num1 + num2 + num3
 }
 var result = numbers(20, 10, 15)
-console.log(result)*/
+console.log(result)
 
 function findOddEven(num){
 if ( num % 2 === 0) {
@@ -32,16 +32,16 @@ findOddEven(6)
 
 
 
-// function findString(string) {
-//     if (string.legnth > 20){
-//     console.log(string)
-//     } else if
-//     (string.length < 20) {
-// console.log(string + string)
-// }
-// }
-// findString("fishingfishing")
-/*for (var x=0; x<=15; x++) {
+ function findString(string) {
+     if (string.length > 20){
+     console.log(string)
+     } else if
+     (string.length < 20) {
+ console.log(string + string)
+ }
+ }
+ findString("fishingfishing")
+for (var x=0; x<=15; x++) {
     if (x === 0) {
             console.log(x +  " is even");
     }
@@ -51,4 +51,4 @@ findOddEven(6)
     else {
             console.log(x + " is odd");
     }
-}*/
+}
