@@ -1,118 +1,107 @@
-// function fiveAndGreaterOnly(arr) {
-//     const result = arr.filter(function(num){
-//         if(num >= 5){
-//             return true;
-//         }
-//     });
-// return result;
-// };
-// console.log(fiveAndGreaterOnly([3, 6, 8, 2]));
-// console.log("--------");
+function fiveAndGreaterOnly(arr) {
+    const result = arr.filter(function(num){
+        if(num >= 5){
+            return true;
+        }
+    });
+return result;
+};
+console.log(fiveAndGreaterOnly([3, 6, 8, 2]));
+console.log("--------");
 
-// function evensOnly(arr){
-//       const result = arr.filter(function(num){
-//     if (num % 2 == 0){
-//         return true;
-//     }
-//       });
-//       return result;
-// }
+function evensOnly(arr){
+      const result = arr.filter(function(num){
+    if (num % 2 == 0){
+        return true;
+    }
+      });
+      return result;
+}
 
-// console.log("Output from #2: " + evensOnly([3, 6, 8, 2]));
-// // Section B
-// function doubleNumber(arr){
-//     const result = arr.map(function(num){
-//         return num * 2;
-//     });
-//     return result;
-// };
-// console.log(doubleNumbers([2, 5, 100]));
+console.log("Output from #2: " + evensOnly([3, 6, 8, 2]));
+// Section B
+function doubleNumber(arr){
+    const result = arr.map(function(num){
+        return num * 2;
+    });
+    return result;
+};
+console.log(doubleNumbers([2, 5, 100]));
 
-// function stringItUp(arr){
-// const result = arr.map(function(num){
-//     return num + "";
-// })
-// return result;
-// }
-// console.log(stringItUp([2, 5, 100]));
-
-
-// function capitalize(arr) {
-//     const result = arr.map(function(word){
-//         return word[0].toUpperCase() + word.substring(1).toLowerCase()
-//     })
-//     return result;
-// }
-// console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"]));
+function stringItUp(arr){
+const result = arr.map(function(num){
+    return num + "";
+})
+return result;
+}
+console.log(stringItUp([2, 5, 100]));
 
 
+function capitalize(arr) {
+    const result = arr.map(function(word){
+        return word[0].toUpperCase() + word.substring(1).toLowerCase()
+    })
+    return result;
+}
+console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"]));
 
 
-// // Section C
-// // function total(arr) {
-// //    const result = arr.reduce(function(num, finalAddition){
-// //               finalAddition = finalAddition + num;
-// //               return finalAddition;
-// //    });
-// //    return result;
-// // }
-// // console.log(total([1,2,3]));
 
-// // //section D
+function total(arr) {
+   const result = arr.reduce(function(num, finalAddition){
+              finalAddition = finalAddition + num;
+              return finalAddition;
+   });
+   return result;
+}
+console.log(total([1,2,3]));
 
-// // //.sort()
-// // function leastToGreatest(arr){
-// //     const result = arr.sort(function(num1, num2){
+//section D
 
 
-// //     });
-// //     return result;
-// // }
-
-
-// // function nameOnly(arr){
-// //     const result = arr.map(function(word){
-// //        return word.name;
-// //   
+function nameOnly(arr){
+    const result = arr.map(function(word){
+       return word.name;
+  
         
-// //     });
-// //     return result;
-// // };
-// // console.log(namesOnly([
-// //     {name: "Angelina Jolie", age:80},
-// //     {name: "Eric Jones", age:2},
-// //     {name: "Paris Hilton", age:5},
-// //     {name: "Kanye West", age:16},
-// //     {name: "Bob Ziroll", age:100},
-// // ]));
+    });
+    return result;
+};
+console.log(namesOnly([
+    {name: "Angelina Jolie", age:80},
+    {name: "Eric Jones", age:2},
+    {name: "Paris Hilton", age:5},
+    {name: "Kanye West", age:16},
+    {name: "Bob Ziroll", age:100},
+]));
 
-// //extra credit 2
-// function makeString(arr){
-//     const result = arr.map(function(oldEnough){
-//         if (oldEnough.age >= 17){
-//             return oldEnough.name + " can see The Matrix";
-//         }else (oldEnough.age < 17)
-//         return oldEnough.name + " cannot see the Matrix";
-//     });
-//     return result;
-// };
+// extra credit 2
+function makeString(arr){
+    const result = arr.map(function(oldEnough){
+        if (oldEnough.age >= 17){
+            return oldEnough.name + " can see The Matrix";
+        }else (oldEnough.age < 17)
+        return oldEnough.name + " cannot see the Matrix";
+    });
+    return result;
+};
 
-// console.log(makeStrings([
-//     {name: "Angelina Jolie", age:80},
-//     {name: "Eric Jones", age:2},
-//     {name: "Paris Hilton", age:5},
-//     {name: "Kanye West", age:16},
-//     {name: "Bob Ziroll", age:100}
-// ]));
+console.log(makeStrings([
+    {name: "Angelina Jolie", age:80},
+    {name: "Eric Jones", age:2},
+    {name: "Paris Hilton", age:5},
+    {name: "Kanye West", age:16},
+    {name: "Bob Ziroll", age:100}
+]));
 // Section C
-//1.
-// function total(arr) {
+// 1.
+function total(arr) {
    
-//     return  arr.reduce((total,amount) => total + amount);
-// }
-// console.log(total([1,2,3]));
+    return  arr.reduce((total,amount) => total + amount);
+}
+console.log(total([1,2,3]));
 
-//2.
+// 2.
 function stringConCat(arr) {
     const result = arr.reduce(function(a, b){
         console.log(a)
@@ -151,30 +140,30 @@ console.log(totalVotes(voters));
 
 
 //extra credit
-function shoppingSpree(arr){
-    const result = arr.reduce(function(num1, num2){
+// function shoppingSpree(arr){
+//     const result = arr.reduce(function(num1, num2){
 
-    })
-}
-var wishlist = [
-    {title: "Tesla Model S", price: 90000},
-    {title: "4 carat diamond ring", price: 45000},
-    {title: "Fancy hacky Sack", price: 5},
-    {title: "Gold fidgit spinner", price: 2000},
-    {title: "A second Tesla Model S", price: 90000},
-];
-console.log(shoppingSpree(wishlist));
+//     })
+// }
+// var wishlist = [
+//     {title: "Tesla Model S", price: 90000},
+//     {title: "4 carat diamond ring", price: 45000},
+//     {title: "Fancy hacky Sack", price: 5},
+//     {title: "Gold fidgit spinner", price: 2000},
+//     {title: "A second Tesla Model S", price: 90000},
+// ];
+// console.log(shoppingSpree(wishlist));
 
 //extra credit 2
-function flatten(arr){
+// function flatten(arr){
 
-}
-var arrays = [
-    ["1", "2", "3"],
-    [true],
-    [4, 5, 6]
-];
-console.log(flatten(arrays));
+// }
+// var arrays = [
+//     ["1", "2", "3"],
+//     [true],
+//     [4, 5, 6]
+// ];
+// console.log(flatten(arrays));
 
 //Section D
 function leastToGreatest(arr) {
