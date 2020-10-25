@@ -26,7 +26,7 @@ function doubleNumber(arr){
     });
     return result;
 };
-console.log(doubleNumbers([2, 5, 100]));
+console.log(doubleNumber([2, 5, 100]));
 
 function stringItUp(arr){
 const result = arr.map(function(num){
@@ -37,7 +37,7 @@ return result;
 console.log(stringItUp([2, 5, 100]));
 
 
-function capitalize(arr) {
+function capitalizeNames(arr) {
     const result = arr.map(function(word){
         return word[0].toUpperCase() + word.substring(1).toLowerCase()
     })
@@ -59,7 +59,7 @@ console.log(total([1,2,3]));
 //section D
 
 
-function nameOnly(arr){
+function namesOnly(arr){
     const result = arr.map(function(word){
        return word.name;
   
@@ -76,7 +76,7 @@ console.log(namesOnly([
 ]));
 
 // extra credit 2
-function makeString(arr){
+function makeStrings(arr){
     const result = arr.map(function(oldEnough){
         if (oldEnough.age >= 17){
             return oldEnough.name + " can see The Matrix";
@@ -138,32 +138,6 @@ var voters = [
 ];
 console.log(totalVotes(voters));
 
-
-//extra credit
-// function shoppingSpree(arr){
-//     const result = arr.reduce(function(num1, num2){
-
-//     })
-// }
-// var wishlist = [
-//     {title: "Tesla Model S", price: 90000},
-//     {title: "4 carat diamond ring", price: 45000},
-//     {title: "Fancy hacky Sack", price: 5},
-//     {title: "Gold fidgit spinner", price: 2000},
-//     {title: "A second Tesla Model S", price: 90000},
-// ];
-// console.log(shoppingSpree(wishlist));
-
-//extra credit 2
-// function flatten(arr){
-
-// }
-// var arrays = [
-//     ["1", "2", "3"],
-//     [true],
-//     [4, 5, 6]
-// ];
-// console.log(flatten(arrays));
 
 //Section D
 function leastToGreatest(arr) {

@@ -1,27 +1,27 @@
 // //ES 6 assignment
-// const name = "John"
+const name = "John"
 
-// let age = 101
+let age = 101
 
-// function runForLoop(pets){
-//     let petObjects = []
-//     for (let i = 0; i < pets.length; i++){
-//         const pet = { type: pets[i] }
-//       let name;
-//         if(pets[i] === "cat"){
-//             name = "fluffy"
-//         } else {
-//           name = "spot"
-//         }
+function runForLoop(pets){
+    let petObjects = []
+    for (let i = 0; i < pets.length; i++){
+        const pet = { type: pets[i] }
+      let name;
+        if(pets[i] === "cat"){
+            name = "fluffy"
+        } else {
+          name = "spot"
+        }
 
-//     console.log("pet name: ", name)
-//     pet.name = petObjects.push(pet)
-// }
-// console.log("man name: ", name)
-// return petObjects
-// }
+    console.log("pet name: ", name)
+    pet.name = petObjects.push(pet)
+}
+console.log("man name: ", name)
+return petObjects
+}
 
-// runForLoop(["cat", "dog"])
+runForLoop(["cat", "dog"])
 
 
 //2
